@@ -1,0 +1,44 @@
+
+
+body{
+    background-image: url("../imagef/messf.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+}
+/* .log_nav{
+    background-color: gainsboro;
+    padding: 30px;
+    
+    } */
+.log{
+   
+    height: 530px;
+    width: 350px;
+    padding: 30px;
+    border: 5px black;
+    border-radius: 10px;
+    outline: none;
+    background: black;
+}
+
+.form{
+    height: 530px;
+    width: 350px;
+    padding: 30px;
+    border: 5px black;
+    border-radius: 10px;
+    outline: none;
+    background: black;
+}
+.but{
+    padding-top: 20px; 
+}
+h1{
+    color: aliceblue;
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background-color:gainsboro;
+    overflow: hidden;
+    width:100%;
+}
+.fixed{
+    position:fixed;
+}
+.top h1{
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-top: 1rem;
+    height: 5px;
+}
+.navbar-container ul{
+    list-style: none;
+    text-align:right;
+    margin: 0;
+    padding-right: 2rem;
+    padding-bottom:2rem ;
+    
+}
+.navbar-container li{
+    display: inline-block;
+}
+.navbar-container a{
+    text-decoration: none;
+    color: black;
+    padding: 25px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+}
+.navbar-container a:hover {
+    background-color: white
+}
+
+.section{
+    background-image:url("../imagef/messf.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 750px;
+}
+
+.text-container {
+    margin-top:13rem;
+    /* color:yellow; */
+    /* background-color:rgb(149, 149, 158); */
+     opacity: 0.6; 
+    width: 850px;
+    height: 250px;
+}
+.main-text h1 {
+    font-size:70px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(249, 249, 249);
+    
+
+}
+.sub-text h4{
+     font-size:20px;
+     padding-left: 20px;
+     color: rgb(249, 249, 249);
+     
+}
+.card-inter{
+    border: 2px solid black;
+    height: 310px;
+    width: 313px
+
+}
+.card-inter img{
+ width: 310px;
+ height: 210px;
+}
+.card-container{
+    margin: 2rem;
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:20px ;
+}
+.card-2 h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.card-2 a{
+    margin: 10px;
+    padding:10px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-inter{
+    border-radius: 0.5rem;
+}
+.card-inter h5{
+    font-size: 15px;
+   
+}
+.more-content  {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    background-color:#007bff;
+    margin-left: 42rem;
+}
+.more-content a {
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+.footer {
+    display: flex;
+    margin:20px;
+    padding: 50px;
+    gap:7rem;
+}
+.footer-img img{
+    display: flex;
+    width: 200px;
+    padding: 5px;
+}
+.footer-icon i{
+    width:30px;
+    height: 30px;
+}
+.footer{
+    background-color: rgb(1, 1, 22);
+    color: aliceblue;
+}
