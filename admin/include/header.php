@@ -41,17 +41,17 @@ else{
   </head>
   
   <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0" style="width:100%">
       <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Bachelor Accomodation</a>
       <p class=" w-100"></p>
-      <ul class="navbar-nav px-3">
+      <ul class="navbar-nav px-3" >
         <li class="nav-item text-nowrap">
-        <a class="nav-link" href="logout.php" style="color: white"><?php echo $_SESSION['email'];?></a>
+        <a class="nav-link" href="#" style="color: white"><?php echo $_SESSION['email'];?></a>
         </li>
       </ul>
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="logout.php" style="color: white">Sign out</a>
+          <a class="nav-link" href="../loginf/logout.php" style="color: white">Sign out</a>
         </li>
       </ul>
     </nav>

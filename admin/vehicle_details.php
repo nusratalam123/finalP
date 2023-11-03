@@ -54,13 +54,13 @@ include('include/sidebar.php');
           </div>
         <!-- table-->
         <div style="width:52% ;margin-left:18%; background-color:#EBE9E8 " >
-        <form action="#" method="post" style="margin:3%;padding:3%" id="customer-form"name="customer-form" >
+        <form action="#" method="post" style="margin:3%;padding:3% ;width:100%" id="customer-form"name="customer-form" >
          <h3 style="text-align:center">Vehicle Details</h3>
          <div class="women_img" >
-         <img src="image/<?php echo $vehicle_img;?>" class="rounded mx-auto d-block" alt="...">
+         <img src="image/<?php echo $vehicle_img;?>" style="width:50%"class="rounded mx-auto d-block" alt="...">
          </div>
         
-    <ul class="list-group list-group-flush">
+    <ul class="list-group list-group-flush" style="width:93%">
     <h6><li class="list-group-item">Name:<?php echo $name;?></li></h6>
     <h6><li class="list-group-item">Mobile:<?php echo $mobile;?></li></h6>
     <h6><li class="list-group-item">Working Area:<?php echo $area;?></li></h6>
@@ -69,7 +69,7 @@ include('include/sidebar.php');
    
     
   </ul>
-  <div style="margin-left:40%">
+  <div style="margin-left:33%">
           <a class="btn btn-primary" href="booked_vehicle.php?book=$id">Book Now</a>
       </div>
     </div> 

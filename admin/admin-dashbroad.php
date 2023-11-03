@@ -62,24 +62,28 @@ include('include/sidebar.php');
   <div class="card">
     <img src="../imagef/messf.jpg" class="card-img-top" alt="...">
     <div class="card-footer">
+      <h6 style="margin-left:35%">Mess</h6>
     <a href="admin_mess_page.php" class="btn btn-primary" style="padding:4%;margin-left:25%">Go here</a>
     </div>
   </div>
   <div class="card">
-    <img src="../imagef/flatf.jpg" class="card-img-top" alt="...">
+    <img style="heigth:70%" src="../imagef/flatf.jpg" class="card-img-top" alt="...">
     <div class="card-footer">
+    <h6 style="margin-left:35%">Flat</h6>
     <a href="admin_flat.php" class="btn btn-primary" style="padding:4%;margin-left:25%">Go here</a>
     </div>
   </div>
   <div class="card">
     <img src="../admin/image/chef2.jpg" class="card-img-top" alt="...">
     <div class="card-footer">
+    <h6 style="margin-left:35%">Chef</h6>
     <a href="admin_women.php" class="btn btn-primary" style="padding:4%;margin-left:25%">Go here</a>
     </div>
   </div>
   <div class="card">
     <img src="../image/truck101.jpg" class="card-img-top" alt="...">
     <div class="card-footer">
+    <h6 style="margin-left:30%">Vehicle</h6>
     <a href="admin_vehicle_page.php" class="btn btn-primary" style="padding:4%;margin-left:25%">Go here</a>
     </div>
   </div>
@@ -148,7 +152,7 @@ include('include/sidebar.php');
   $countall=$conn->query($sql);
   $rowcount2=mysqli_num_rows($countall);
   ?>
-<p class="text-sm mb-0 text-capitalize"> Women chef users</p>
+<p class="text-sm mb-0 text-capitalize"> chef users</p>
 <h4 class="mb-0"><?php  echo $rowcount2;?></h4>
 </div>
 </div>
@@ -247,7 +251,7 @@ include('include/sidebar.php');
   $countall=$conn->query($sql);
   $rowcount13=mysqli_num_rows($countall);
   ?>
-<p class="text-sm mb-0 text-capitalize">Number of women chef users</p>
+<p class="text-sm mb-0 text-capitalize">Number of chef users</p>
 <h4 class="mb-0"><?php  echo $rowcount13;?></h4>
 </div>
 </div>

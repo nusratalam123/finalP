@@ -14,7 +14,7 @@ include('include/sidebar.php');
            <li class="breadcrumb-item"><a href="mess_page.php">Flat Page</a></li>
            </ol>
         </nav>
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
           <h1 class="h2">Flat Page</h1>
           <div class="d-flex justify-content-between" style="gap:10px">
           <div class="btn-toolbar" style='gap:10px'>
@@ -22,7 +22,7 @@ include('include/sidebar.php');
               <a class="btn btn-primary" href="add_flat.php">Add flat Post</a>
             </div>
           </div>
-          </div>
+          </div> -->
         <!-- table-->
         <table id="example" class="display" style="width:100%">
         <thead>

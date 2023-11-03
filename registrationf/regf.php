@@ -60,7 +60,7 @@ session_start();
    
 
     <p>Have an account?? <a href="../loginf/loginpage.php"> <b> login</b></a> </p>
-    <p>OR, <a href="../homef/homef.php"> <b> GO HOME</b></a> </p>
+    <p>OR, <a href="../homef/home.php"> <b> GO HOME</b></a> </p>
     </form>
     </div>
     <script>

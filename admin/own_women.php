@@ -11,14 +11,14 @@ include('include/sidebar.php');
            <ol class="breadcrumb">
            <li class="breadcrumb-item"><a href="../homef/homef.php">Home</a></li>
            <li class="breadcrumb-item"><a href="user_dashbroad.php">Dashbroad</a></li>
-           <li class="breadcrumb-item"><a href="women_chef_page.php">Women Page</a></li>
+           <li class="breadcrumb-item"><a href="women_chef_page.php">Chef Page</a></li>
            </ol>
         </nav>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Women Chef Page</h1>
+          <h1 class="h2">Chef Page</h1>
           <div class="d-flex justify-content-between" style="gap:10px">
           <div class="btn-toolbar" style='gap:10px'>
-              <a class="btn btn-primary" href="add_women_chef.php">Add Women Chef Post</a>
+              <a class="btn btn-primary" href="add_women_chef.php">Add Chef Post</a>
             </div>
           </div>
             <!-- <div class="btn-toolbar mb-2 mb-md-0">

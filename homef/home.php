@@ -77,7 +77,7 @@
             <h1>Bachelor Accomodation</h1>
           </div>
           <div  class="sub-text">
-            <h4>This is solution of bachelor problem..<br>for this wibsite.. You can find  single room,<br>Flat ,women cheaf,advantage of vehicles etc.</h4>
+            <h4>This is solution of bachelor problem.for this wibsite.<br> You can find  single room,Flat ,chef,advantage of <br>vehicles etc.</h4>
           </div>
         </div>
   </div>
@@ -108,7 +108,7 @@
           <div class="card-inter">
             <img src="../imagef/womenf.jpg" alt="">
             <div class="card-2">
-              <h4 style="text-align:center;">Women Chef</h4>
+              <h4 style="text-align:center;">Chef</h4>
               <a href="../loginf/loginpage.php" class="btn btn-primary">Go Here</a>
             </div>
           </div>

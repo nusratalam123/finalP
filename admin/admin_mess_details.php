@@ -66,7 +66,7 @@ include('include/sidebar.php');
         <form action="#" method="post" style="margin:3%;padding:3%" id="customer-form"name="customer-form" >
          <h3 style="text-align:center">Mess Details</h3>
          <div class="mess-details">
-    <div class="mess-img" >
+    <div class="mess-img" style="width:33%" >
   <img src="image/<?php echo$image;?>" class="card-img-top" alt="...">
   <img src="image/<?php echo$kitchen_img;?>" class="card-img-top" alt="...">
   <img src="image/<?php echo$washroom_img;?>" class="card-img-top" alt="...">

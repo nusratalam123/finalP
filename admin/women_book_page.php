@@ -14,7 +14,7 @@ include('include/sidebar.php');
            </ol>
         </nav>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Booked list of Women Chef</h1>
+          <h1 class="h2">Booked list of  Chef</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <!-- <a class="btn btn-primary" href="add-customer.php"> Add Customer</a> -->
             </div>

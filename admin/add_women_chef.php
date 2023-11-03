@@ -15,7 +15,7 @@ include('include/sidebar.php');
            </ol>
         </nav>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Add Women Chef Post</h1>
+          <h1 class="h2">Add Chef Post</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <!-- <a class="btn btn-primary" href="add-customer.php"> Add Customer</a> -->
             </div>
@@ -23,7 +23,7 @@ include('include/sidebar.php');
         <!-- table-->
         <div style="width:50% ;margin-left:25%; background-color:#EBE9E8 ">
         <form action="add_women_chef.php" method="post" style="margin:3%;padding:3%" id="flat_form"name="flat_form" enctype="multipart/form-data" >
-         <h3 style="text-align:center">Add Women Chef post information</h3>
+         <h3 style="text-align:center">Add Chef post information</h3>
          <div class="form-group">
     <label for="exampleInputEmail1">Name of the Post User</label>
     <input type="text" class="form-control" id="chef_name" name="chef_name" placeholder="Enter name of Post User" required autofocus>

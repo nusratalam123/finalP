@@ -20,6 +20,8 @@ include('connectionf/bdf.php');
 //session_start();
 
 $query=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSION['email']}' and admin_type='1'");
+$query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSION['email']}' and admin_type='3'");
+
 
  if(mysqli_num_rows($query)>0){
   ?>
@@ -27,7 +29,7 @@ $query=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSI
   <div class="row">
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <div class="sidebar-sticky">
-      <h3 style="padding:10px">Super Admin</h3>
+      <h3 style="padding:10px">Super Admin </h3>
         <ul class="nav flex-column">
           <li class="nav-item">
             <a  id="alink"class="nav-link active" href="admin-dashbroad.php">
@@ -62,7 +64,7 @@ $query=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSI
           <li class="nav-item">
             <a id="alink"class="nav-link" href="admin_women.php">
               <span data-feather="users"></span>
-              Women Chef
+             Chef
             </a>
           </li>
           <li class="nav-item">
@@ -87,6 +89,38 @@ $query=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSI
             <a id="alink" class="nav-link" href="admin_review_page.php">
               <span data-feather="users"></span>
               Review Page
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<?php
+ }
+ else if(mysqli_num_rows($query1)>0){
+  ?>
+  <div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+      <h3 style="padding:10px">Data collector </h3>
+        <ul class="nav flex-column">
+        <li>
+            <a id="alink" class="nav-link active" href="../homef/homef.php">
+              <span data-feather="home"></span>
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a  id="alink"class="nav-link active" href="dataCollectorDashbroad.php">
+              <span data-feather="bar-chart-2"></span>
+              Data collector Page <span class="sr-only">(current)</span>
+            </a>
+           </li>
+           
+          <li class="nav-item">
+            <a id="alink" class="nav-link" href="customer.php">
+              <span data-feather="users"></span>
+              Customers
             </a>
           </li>
         </ul>
@@ -137,7 +171,7 @@ $query=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSI
           <li class="nav-item">
             <a id="alink" class="nav-link" href="women_chef_page.php">
               <span data-feather="users"></span>
-              Women Chef
+               Chef
             </a>
           </li>
           <li class="nav-item">

@@ -51,7 +51,6 @@ session_start();
     <link rel="stylesheet" href="loginpagef2.css">
 </head>
 <body>
-
 <div class="log"> 
      <h1>Login</h1>
      
@@ -103,6 +102,7 @@ if(isset($_POST['submit'])){
 
   $query=mysqli_query($conn,"select * from admin_login where admin_email='$email'and admin_pass='$password'and admin_type='1'");
   $query1=mysqli_query($conn,"select * from admin_login where admin_email='$email'and admin_pass='$password'and admin_type='2'");
+  $query2=mysqli_query($conn,"select * from admin_login where admin_email='$email'and admin_pass='$password'and admin_type='3'");
   
   if($query) {
     $_SESSION['email']=$email;
@@ -112,7 +112,11 @@ if(isset($_POST['submit'])){
   }
   else if(mysqli_num_rows($query1)>0){
     $_SESSION['email']=$email;
-    header('location:../homef/homef.php');
+    header('location:../homef/homeCustomer.php');
+  }
+  else if(mysqli_num_rows($query2)>0){
+    $_SESSION['email']=$email;
+    header('location:../homef/homeDataCollector.php');
   }
   else{
     echo "<script>alert('please try again')</script>";

@@ -50,20 +50,20 @@ include('include/sidebar.php');
            </ol>
         </nav>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Women chef Details</h1>
+          <h1 class="h2"> chef Details</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <!-- <a class="btn btn-primary" href="add-customer.php"> Add Customer</a> -->
             </div>
           </div>
         <!-- table-->
-        <div style="width:52% ;margin-left:18%; background-color:#EBE9E8 " >
-        <form action="#" method="post" style="margin:10%;padding:10%;width:500px" id="customer-form"name="customer-form" >
-         <h3 style="text-align:center">Women Chef Details</h3>
+        <div style="width:45% ;margin-left:18%; background-color:#EBE9E8 " >
+        <form action="#" method="post" style="padding:10%;width:100%" id="customer-form"name="customer-form" >
+         <h3 style="text-align:center"> Chef Details</h3>
          <div class="women_img" >
-         <img src="image/<?php echo $chef_img;?>" class="rounded mx-auto d-block" alt="...">
+         <img src="image/<?php echo $chef_img;?>" style="width:50%" class="rounded mx-auto d-block" alt="...">
          </div>
         
-    <ul class="list-group list-group-flush">
+    <ul class="list-group list-group-flush" style="width:100%">
     <h6><li class="list-group-item">Name:<?php echo $name;?></li></h6>
     <h6><li class="list-group-item">Working Area:<?php echo $area;?></li></h6>
     <h6><li class="list-group-item">Date:<?php echo $date;?></li></h6>
@@ -72,7 +72,7 @@ include('include/sidebar.php');
     <h6><li class="list-group-item">Age of the chef:<?php echo $age;?></li></h6>
     <h6><li class="list-group-item">Description:<?php echo $description;?></li></h6>
   </ul>
-  <div style="margin-left:40%">
+  <div style="margin-left:33%">
   
     
           <a class="btn btn-primary" href="women_book_page.php?id=<?php echo $id?>">Book Now</a>

@@ -15,13 +15,13 @@ include('include/sidebar.php');
            <li class="breadcrumb-item"><a href="mess_page.php">Mess Page</a></li>
            </ol>
         </nav>
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
           <h1 class="h2">Available Mess list</h1>
             <div class="btn-toolbar mb-2 mb-md-0" style='gap:10px'>
             <a class="btn btn-primary" href="own_mess.php">Own Post</a>
             <a class="btn btn-primary" href="add_mess.php">Add Mess Post</a>
             </div>
-          </div>
+          </div> -->
         <!-- table-->
         <table id="example" class="display" style="width:100%">
         <thead>
