@@ -102,7 +102,7 @@ if(isset($_POST['submit'])){
 
   $query=mysqli_query($conn,"select * from admin_login where admin_email='$email'and admin_pass='$password'and admin_type='1'");
   $query1=mysqli_query($conn,"select * from admin_login where admin_email='$email'and admin_pass='$password'and admin_type='2'");
-  $query2=mysqli_query($conn,"select * from admin_login where admin_email='$email'and admin_pass='$password'and admin_type='3'");
+  $query2=mysqli_query($conn,"select * from data_collector where email='$email'and password='$password'");
   
   if($query) {
     $_SESSION['email']=$email;

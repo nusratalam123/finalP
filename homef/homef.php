@@ -107,28 +107,28 @@ else{
             <img src="../imagef/messf.jpg" alt="">
             <div class="card-2">
               <h4 style="text-align:center;">Mess</h4>
-              <a href="../admin/mess_page.php" class="btn btn-primary">Go Here</a>
+              <a href="../admin/admin_mess_page.php" class="btn btn-primary">Go Here</a>
             </div>
           </div>
           <div class="card-inter">
             <img src="../imagef/flatf.jpg" alt="">
             <div class="card-2" >
               <h4 style="text-align:center;">Flat</h4>
-              <a href="../admin/flat_page.php" class="btn btn-primary">Go Here</a>
+              <a href="../admin/admin_flat.php" class="btn btn-primary">Go Here</a>
             </div>
           </div>
           <div class="card-inter">
             <img src="../imagef/womenf.jpg" alt="">
             <div class="card-2">
               <h4 style="text-align:center;">Chef</h4>
-              <a href="../loginf/loginpage.php" class="btn btn-primary">Go Here</a>
+              <a href="../admin/admin_women.php" class="btn btn-primary">Go Here</a>
             </div>
           </div>
           <div class="card-inter">
             <img src="../imagef/truckf.png" alt="">
             <div class="card-2">
               <h4 style="text-align:center;">vehicle</h4>
-              <a href="../admin/vehicle_page.php" class="btn btn-primary">Go Here</a>
+              <a href="../admin/admin_vehicle_page.php" class="btn btn-primary">Go Here</a>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ else{
   </div>
   <!--end review-->
     <div class="more-content">
-      <a  href="../home/review/review.html">More Reviews</a>
+      <a  href="../admin/admin_review_page.php">More Reviews</a>
     </div>
    <!--footer-->
    <div class="footer">

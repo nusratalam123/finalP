@@ -20,7 +20,7 @@ include('connectionf/bdf.php');
 //session_start();
 
 $query=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSION['email']}' and admin_type='1'");
-$query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESSION['email']}' and admin_type='3'");
+$query1=mysqli_query($conn,"select * from data_collector where email='{$_SESSION['email']}'");
 
 
  if(mysqli_num_rows($query)>0){
@@ -49,12 +49,6 @@ $query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESS
               Mess
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a id="alink" class="nav-link" href="admin_mess_approve.php">
-              <span data-feather="home"></span>
-              Mess Approval page
-            </a>
-          </li> -->
           <li class="nav-item">
             <a id="alink" class="nav-link" href="admin_flat.php">
               <span data-feather="home"></span>
@@ -77,6 +71,12 @@ $query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESS
             <a id="alink" class="nav-link" href="customer.php">
               <span data-feather="users"></span>
               Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="alink" class="nav-link" href="dataCollectorDashbroad.php">
+              <span data-feather="users"></span>
+              Data Collector Page
             </a>
           </li>
           <li class="nav-item">
@@ -105,7 +105,7 @@ $query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESS
       <h3 style="padding:10px">Data collector </h3>
         <ul class="nav flex-column">
         <li>
-            <a id="alink" class="nav-link active" href="../homef/homef.php">
+            <a id="alink" class="nav-link active" href="../homef/homeDataCollector.php">
               <span data-feather="home"></span>
               Home <span class="sr-only">(current)</span>
             </a>
@@ -118,9 +118,9 @@ $query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESS
            </li>
            
           <li class="nav-item">
-            <a id="alink" class="nav-link" href="customer.php">
+            <a id="alink" class="nav-link" href="dataCustomer.php">
               <span data-feather="users"></span>
-              Customers
+              Customers Booking Information
             </a>
           </li>
         </ul>
@@ -150,7 +150,7 @@ $query1=mysqli_query($conn,"select * from admin_login where admin_email='{$_SESS
             </a>
           </li>
           <li class="nav-item">
-            <a id="alink" class="nav-link active" href="../homef/homef.php">
+            <a id="alink" class="nav-link active" href="../homef/homeCustomer.php">
               <span data-feather="home"></span>
               
               Home <span class="sr-only">(current)</span>

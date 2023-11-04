@@ -121,7 +121,7 @@ else{
             <img src="../imagef/womenf.jpg" alt="">
             <div class="card-2">
               <h4 style="text-align:center;">Chef</h4>
-              <a href="../loginf/loginpage.php" class="btn btn-primary">Go Here</a>
+              <a href="../admin/women_chef_page.php" class="btn btn-primary">Go Here</a>
             </div>
           </div>
           <div class="card-inter">
@@ -160,7 +160,7 @@ else{
   </div>
   <!--end review-->
     <div class="more-content">
-      <a  href="../home/review/review.html">More Reviews</a>
+      <a  href="../admin/see_review.php">More Reviews</a>
     </div>
    <!--footer-->
    <div class="footer">

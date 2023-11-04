@@ -7,15 +7,8 @@ include('include/sidebar.php');
 ?>
     
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-        <nav aria-label="breadcrumb">
-           <ol class="breadcrumb">
-           <li class="breadcrumb-item"><a href="../homef/homef.php">Home</a></li>
-           <li class="breadcrumb-item"><a href="admin-dashbroad.php">Dashbroad</a></li>
-           <li class="breadcrumb-item"><a href="admin_flat.php">Flat Page</a></li>
-           </ol>
-        </nav>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Flat Page</h1>
+          <h1 class="h2">Vehicle booking Customer Information</h1>
           <div class="d-flex justify-content-between" style="gap:10px">
           <!-- <div class="btn-toolbar">
               <a class="btn btn-primary" href="add_flat.php">Add flat Post</a>
@@ -27,55 +20,48 @@ include('include/sidebar.php');
         <thead>
             <tr>
                 <th>#Serial no:</th>
-                <th>Post Name</th>
-                <th>Area</th>
-                <th>Date</th>
-                <th>See Details</th>
-                <th>Action</th>
+                <th>Customer Name</th>
+                <th>Phone Number</th>
             </tr>
         </thead>
         <tbody>
         <?php
+        if($_SESSION['email']=='datacollector33@gmail.com'){
            include('connectionf/bdf.php');
-           $query=mysqli_query($conn,"select * from flat_info");
+           $query=mysqli_query($conn,"select * from flat_book where living_area='airport'");
            while($row=mysqli_fetch_array($query)){
 
          ?> 
          <tr>
                 <td><?php echo $row['id']; ?></td>
-                <td><?php echo $row['post_name']; ?></td>
-                <td><?php echo $row['area']; ?></td>
-                <td><?php echo $row['date']; ?></td>
-                <td>
-                  <div class="row">
-                    <div class="btn-group">
-                      <a href="flat_details.php?detail=<?php echo $row['id']; ?>" class="btn btn-success"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                     
-                  </div>
-                </td>
-                <td>
-                  <div class="row">
-                    <div class="btn-group">
-                      <a href="admin_flat_edit.php?edit=<?php echo $row['id'];?>" class="btn btn-success"><i class="fa-solid fa-pen"></i></a>
-                      <a href="flat_delete.php?del=<?php echo $row['id'];?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
-                    </div>
-                     
-                  </div>
-                </td>
+                <td><?php echo $row['name']; ?></td>
+                <td><?php echo $row['mobile']; ?></td>
         </tr> 
+           
          <?php }
+        }
+        else if($_SESSION['email']=='datacollector34@gmail.com'){
+            include('connectionf/bdf.php');
+           $query=mysqli_query($conn,"select * from flat_book where living_area='Uttara'");
+           while($row=mysqli_fetch_array($query)){
+
+         ?> 
+         <tr>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo $row['name']; ?></td>
+                <td><?php echo $row['mobile']; ?></td>
+        </tr> 
+           
+         <?php } 
+        }
          
          ?>       
         </tbody>
         <tfoot>
             <tr>
                 <th>#Serial no:</th>
-                <th>Post Name</th>
-                <th>Area</th>
-                <th>Date</th>
-                <th>See Details</th>
-                <th>Action</th>
+                <th>Customer Name</th>
+                <th>Phone Number</th>
             </tr>
         </tfoot>
     </table>
